@@ -1,9 +1,9 @@
 %define upstream_name    DBD-Mock
-%define upstream_version 1.39
+%define upstream_version 1.40
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Mock database driver for testing
 License:    GPL+ or Artistic
