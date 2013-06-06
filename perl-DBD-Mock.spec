@@ -1,19 +1,19 @@
 %define upstream_name    DBD-Mock
-%define upstream_version 1.41
-
+%define upstream_version 1.45
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.45
+Release:	1
 
 Summary:	Mock database driver for testing
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DBD/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/DBD/DBD-Mock-1.45.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(DBI)
 BuildRequires:	perl(Test::More)
+BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Module::Build::Compat)
 BuildArch:	noarch
 
@@ -86,4 +86,5 @@ make test
 
 * Wed Nov 26 2008 cpan2dist 1.39-1mdv
 - initial mdv release, generated with cpan2dist
+
 
