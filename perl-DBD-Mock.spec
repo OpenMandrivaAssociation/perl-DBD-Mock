@@ -1,6 +1,5 @@
 %define upstream_name    DBD-Mock
-%define upstream_version 1.41
-
+%define upstream_version 1.45
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.45
 Release:	1
