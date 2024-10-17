@@ -7,7 +7,7 @@ Release:	3
 Summary:	Mock database driver for testing
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/DBD/DBD-Mock-1.45.tar.gz
 
 BuildRequires:	perl-devel
