@@ -1,8 +1,7 @@
 %define upstream_name    DBD-Mock
-%define upstream_version 1.59
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.59
+Release:	2
 
 Summary:	Mock database driver for testing
 License:	GPL+ or Artistic
@@ -46,7 +45,7 @@ this and other ways, strongly recommended. (See the SEE ALSO manpage for a
 link)
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -78,9 +77,7 @@ make test
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.390.0-1mdv2011.0
 + Revision: 403092
-- rebuild using %%perl_convert_version
-
-* Wed Nov 26 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.39-1mdv2009.1
+- rebuild using %1.59 Wed Nov 26 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.39-1mdv2009.1
 + Revision: 307032
 - import perl-DBD-Mock
 
