@@ -1,7 +1,8 @@
 %define upstream_name    DBD-Mock
+%define upstream_version 1.59
 Name:		perl-%{upstream_name}
 Version:	1.59
-Release:	2
+Release:	1
 
 Summary:	Mock database driver for testing
 License:	GPL+ or Artistic
@@ -61,28 +62,4 @@ make test
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/DBD
-
-%changelog
-* Fri Jun 24 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.410.0-1mdv2011.0
-+ Revision: 686989
-- update to new version 1.41
-
-* Wed Jun 22 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.400.0-1
-+ Revision: 686628
-- update to new version 1.40
-
-* Sun May 29 2011 Funda Wang <fwang@mandriva.org> 1.390.0-2
-+ Revision: 681352
-- mass rebuild
-
-* Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.390.0-1mdv2011.0
-+ Revision: 403092
-- rebuild using %1.59 Wed Nov 26 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.39-1mdv2009.1
-+ Revision: 307032
-- import perl-DBD-Mock
-
-
-* Wed Nov 26 2008 cpan2dist 1.39-1mdv
-- initial mdv release, generated with cpan2dist
-
 
