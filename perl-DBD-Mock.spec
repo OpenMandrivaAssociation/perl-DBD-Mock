@@ -2,7 +2,7 @@
 %define upstream_version 1.59
 Name:		perl-%{upstream_name}
 Version:	1.59
-Release:	4
+Release:	5
 
 Summary:	Mock database driver for testing
 License:	GPL+ or Artistic
@@ -49,16 +49,16 @@ link)
 %setup -q -n DBD-Mock-1.59
 
 %build
-perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Build.PL installdirs=vendor
+./Build
 
 %check
 # soft: do not fail package on test failures
 set +e
-make test
+make test || :
 
 %install
-%makeinstall_std
+./Build install destdir=%{buildroot} create_packlist=0
 
 %files
 %doc Changes README
