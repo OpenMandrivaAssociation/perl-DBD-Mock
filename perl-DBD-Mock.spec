@@ -2,7 +2,7 @@
 %define upstream_version 1.59
 Name:		perl-%{upstream_name}
 Version:	1.59
-Release:	29
+Release:	30
 
 Summary:	Mock database driver for testing
 License:	GPL+ or Artistic
