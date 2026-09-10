@@ -1,4 +1,2 @@
-removed_sources:
-  DBD-Mock-1.41.tar.gz: dd3b00d4dab7e118426aed6a11a7d2bb024b3bbd
 sources:
-  DBD-Mock-1.59.tar.gz: 94f57cc914197558ad49486d9c3fcdd8e1fe02e2
+  DBD-Mock-1.60.tar.gz: d1728617d86b7813c10d3e56e3454364a9df8708

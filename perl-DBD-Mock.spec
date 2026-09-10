@@ -1,14 +1,14 @@
 %define upstream_name    DBD-Mock
-%define upstream_version 1.59
+%define upstream_version 1.60
 Name:		perl-%{upstream_name}
-Version:	1.59
-Release:	2
+Version:	1.60
+Release:	1
 
 Summary:	Mock database driver for testing
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://gitlab.com/scrapheap/DBD-Mock
-Source0:	https://cpan.metacpan.org/authors/id/J/JL/JLCOOPER/DBD-Mock-1.59.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JL/JLCOOPER/DBD-Mock-1.60.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Module::Build::Tiny)
