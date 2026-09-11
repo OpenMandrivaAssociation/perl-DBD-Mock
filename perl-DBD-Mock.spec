@@ -47,7 +47,7 @@ this and other ways, strongly recommended. (See the SEE ALSO manpage for a
 link)
 
 %prep
-%setup -q -n DBD-Mock-1.59
+%setup -q -n DBD-Mock-%{version}
 
 %build
 perl Build.PL --installdirs=vendor
